@@ -47,7 +47,7 @@ Information VGA Display
 
 ## How to Compile
 
-Building an OS requires a cross-compiler. The one that is provided by your OS will run but is likely to throw many error which will be difficult to debug. In order to compile the codes you need to build a `gcc-7.3.0` and `binutils-2.3` that targets `i686-elf` . Google on how to build cross-compilers and then use those compilers to run the following scripts. (Make sure to add the new gcc and binutils to path).
+Building an OS requires a cross-compiler. The one that is provided by your OS will run but is likely to throw many error which will be difficult to debug. In order to compile the codes you need to build `gcc-7.3.0` and `binutils-2.3` that targets `i686-elf` . Google on how to build cross-compilers and then use those compilers to run the following scripts. (Make sure to add the new gcc and binutils to path). You can read this in order to learn how to build the cross-compiler from source https://wiki.osdev.org/GCC_Cross-Compiler 
 
 * `build.sh` : To build the kernel
 * `multiboot-sanity.sh` : It must return, "Multibootable OS"
@@ -55,7 +55,7 @@ Building an OS requires a cross-compiler. The one that is provided by your OS wi
 
 
 
-Any hacks that you want to do you can do it on `kernel.c` and it will be good to not mess the file you don't have any idea. This `kernel.c` can also not include stuffs like `stdio.h` or other system header. Our OS does not provide these headers as of now. 
+Any hacks that you want to do you can do it on `kernel.c` and it will be good to not mess the file you don't have any idea. This `kernel.c` cannot include stuffs like `stdio.h` or other system header. Our OS does not provide these headers as of now. 
 
 
 
