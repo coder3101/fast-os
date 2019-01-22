@@ -57,7 +57,7 @@ Building an OS requires a cross-compiler. The one that is provided by your OS wi
 
 Any hacks that you want to do you can do it on `kernel.c` and it will be good to not mess the file you don't have any idea. This `kernel.c` cannot include stuffs like `stdio.h` or other system header. Our OS does not provide these headers as of now. 
 
-
-
 ---
+
+**Special Thanks to https://wiki.osdev.org/Expanded_Main_Page for their great documentations and resources**
 
